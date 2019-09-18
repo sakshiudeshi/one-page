@@ -1,0 +1,160 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+
+\documentclass[margin]{res}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font  
+\topmargin=-0.5in  % start text higher on the page
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+
+\usepackage{hanging}
+\newcommand\publication[1]{%
+	\smallskip\par\hangpara{1.5em}{1}\bibentry{#1}\smallskip
+}
+
+\begin{document}
+\nobibliography{OnePage.bib} 
+%\bibliographystyle{apacite}
+\bibliographystyle{plainurl}
+%\begin{center}
+
+\name{Sakshi Udeshi}
+
+
+\address{\href{mailto:sakshi_udeshi@mymail.sutd.edu.sg}{sakshi\_udeshi@mymail.sutd.edu.sg} \\ +65-88294529}
+\address{11 Simei Street 4, \\Singapore,  529866}
+%\address{}
+
+                    
+                        
+\begin{resume}  
+
+\section{RESEARCH INTERESTS} 
+\begin{tabular}{p{5in}} 
+Machine Leaning Testing, Fairness in Machine 
+Learning, Explainability and Interpretability in Machine Leaning, Machine Learning Robustness, Machine Learning Security  
+\end{tabular}        
+ 
+
+\section{EDUCATION}
+
+\begin{tabular}{p{4.2in} r} 
+\textbf{\href{https://www.sutd.edu.sg}{Singapore University of Technology and Design}}  &\\
+                \textbf{\textit{Doctor of Philosophy}} &
+                \textit{Sept 2017 - Ongoing} \\
+                \textbf{\textit{Computer Science}} & \\
+                {\textit{Advisor: Dr. Sudipta Chattopadhyay}} & \\
+                
+\end{tabular} \\
+
+\begin{tabular}{p{4.2in} r} 
+       \textbf{\href{http://www.bits-pilani.ac.in/goa/}{Birla Institute of Technology and Science, Pilani}} & \\
+                \textbf{\textit{M.Sc. (Tech.)}} &
+                \textit{Aug 2012 - May 2016} \\
+                \textbf{\textit{Information Systems}} & \\
+\end{tabular}
+               
+\section{EXPERIENCE}
+
+ \begin{tabular}{p{4.2in} r} 
+                    \href{https://www.sutd.edu.sg}{Singapore University of Technology and Design} &  \textit{Sept 2017 - Ongoing} 
+                    \end{tabular}
+                     \begin{itemize}
+                        \item[] PhD Candidate;
+                        \begin{itemize}
+                       \item[] Conducted research in the domains of ML fairness, Natural Language Processing and ML security
+                       \item[] Teaching Assistant for undergraduate Algorithms and Software Engineering courses                                             
+                        \end{itemize}
+                     \end{itemize}
+
+                    \begin{tabular}{p{4.2in} r} 
+                    \href{http://www.walmartlabs.com/}{@WalmartLabs} &  \textit{Aug 2016 - June 2017} 
+                    \end{tabular}
+                     \begin{itemize}
+                        \item[] Software Engineer;
+%                        \begin{itemize}
+%                        \item[] Developer in the pricing team. Built batch tools to help price products accurately
+                        
+                        
+%                        \end{itemize}
+                     \end{itemize}
+                     
+                    
+                    
+					\begin{tabular}{p{4.2in} r} 
+					\href{https://housing.com/in}{Housing.com} &  \textit{Jul 2015 - Dec 2015} 
+					 \end{tabular}	
+                   \begin{itemize} % \item[] prevents a bullet from appearing
+                    \item[] Software Development Intern; 
+%                        
+					 \end{itemize} 
+                      
+\section{RESEARCH PROJECTS}      
+                  \begin{tabular}{p{4.2in} r}  % setup 2 columns, first
+					    % is 3 inches wide
+                  Machine Learning Fairness &  \\
+%                  Advisor: Dr Sudipta Chattopadhyay
+                  \end{tabular}	
+                   \begin{itemize} 
+                   \item[] Developed Aequitas, a tool to discover, estimate and fix individual fairness violations in arbitrary machine learning models
+                  
+                     \end{itemize}
+                     
+%		   \end{itemize}
+
+
+\begin{tabular}{p{4.2in} r}  % setup 2 columns, first
+					    % is 3 inches wide
+                  Grammar Based NLP Testing &  \\
+%                  Advisor: Dr Sudipta Chattopadhyay
+                  \end{tabular}	
+                   \begin{itemize} % \item[] prevents a bullet from appearing
+                   \item[] Worked on OGMA, a directed, grammar based approach to systematically find violations in the input space for natural language processing systems
+                  
+                     \end{itemize} 
+
+\begin{tabular}{p{4.2in} r}  % setup 2 columns, first
+					    % is 3 inches wide
+                  Backdoor Attack Detection &  \\
+%                  Advisor: Dr Sudipta Chattopadhyay
+                  \end{tabular}	
+                   \begin{itemize} % \item[] prevents a bullet from appearing
+                   \item[] Developed a completely blackbox methodology to detect backdoor attacks in image classification machine learning models
+                  
+                     \end{itemize} 
+                     
+%\begin{tabular}{p{4.2in} r}  % setup 2 columns, first
+%					    % is 3 inches wide
+%                  Regression Testing and Training Data Interpretability &  \\
+%%                  Advisor: Dr Sudipta Chattopadhyay
+%                  \end{tabular}	
+%                   \begin{itemize} % \item[] prevents a bullet from appearing
+%                   \item[] Exploring techniques to aid test data selection and quantify training/testing data quality
+%                  
+%                     \end{itemize} 
+		   
+\section{PUBLICATIONS}
+        \begin{enumerate}
+			\item \textbf{Udeshi, S.}, Arora, P., \& Chattopadhyay, S. (2018, September). Automated directed fairness testing. In \textit{Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering (pp. 98-108).} ACM.            
+            \item \textbf{Udeshi, S.}, \& Chattopadhyay, S. (2019). Grammar 	Based Directed Testing of Machine Learning Systems. \textit{arXiv preprint arXiv:1902.10027}. \\ \textbf{Under major revision in IEEE Transactions of Software Engineering}
+            \item \textbf{Udeshi, S.}, Shanshan, P., Woo, G., Loh, L., \& Chattopadhyay, L. R. S. (2019). Model agnostic defence against backdoor attacks in machine learning. \textit{Under Review}   
+        \end{enumerate}
+ 
+
+                 
+
+\section{HONORS} 
+	\begin{itemize}
+		\item [] \href{https://www.sutd.edu.sg/Admissions/Graduate/PhD-Programmes/SUTD-PhD-Programme/Financial}{SUTD President's Graduate Fellowship}
+%		\item [] 
+	\end{itemize}
+
+ 
+\end{resume} 
+\end{document}
+
